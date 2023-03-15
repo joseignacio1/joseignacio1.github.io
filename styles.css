@@ -29,7 +29,7 @@ nav ul li a {
 	color: #000000;
 	text-decoration: none;
 	font-family: 'Roboto', sans-serif;
-	font-size: clamp( .5rem, 3vw, 2rem);
+	font-size: clamp( .9rem, 3vw, 2rem);
 	font-weight: 600;
 }
 
