@@ -9,7 +9,7 @@ header {
 }
 
 .logo img {
-	height: clamp( 2rem, 5vw, 5rem);
+	height: clamp( 2.7rem, 5vw, 5rem);
 	display: inline-block;
 }
 
