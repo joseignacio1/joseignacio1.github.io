@@ -1,35 +1,58 @@
+/* Header */
+
 header {
 	background-color: #ffffff;
 	color: #000000;
 	display: inline-block;
 	align-items: center;
 	justify-content: space-between;
-	padding-top: 2vh;
-	padding-bottom: 2vh;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
 }
 
-.logo img {
+.logo {
+	font-size: clamp( 1.4rem, 3vw, 1.4rem);
+	display: inline-block;
+	width: 100%;
+	text-align: middle;
+	text-decoration: none;
+	font-weight: 1000;
+	letter-spacing: .3rem;
+}
+
+/* .logo img {
 	height: clamp( 2.7rem, 5vw, 5rem);
 	display: inline-block;
-}
+} */
+
+/* Desktop Menu */
 
 nav ul {
-	list-style: none;
-	display: flex;
-	align-items: center;
-	margin: 0;
-	padding: .3rem;
+	display: none; /* Hide on Mobile */
 }
 
+@media (min-width: 600px) {
+	nav ul {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		margin: 0;
+		padding: .3rem;
+	}
+	}
+
+/* Desktop Menu Styling*/
+
 nav ul li {
-	margin: 0 20px;
+	margin: 0 75px;
+	padding-top: 3vh;
 }
 
 nav ul li a {
 	color: #000000;
 	text-decoration: none;
 	font-family: 'Roboto', sans-serif;
-	font-size: clamp( .9rem, 3vw, 2rem);
+	font-size: clamp( 1rem, 3vw, 1rem);
 	font-weight: 600;
 }
 
@@ -37,12 +60,118 @@ nav ul li a:hover{
 	color:#a0a0a0
 }
 
+/* Barra Divisora */
+
 hr {
 	width: 100%;
 	height: .1px;
 	color: #000000;
 	background-color: #000000;
 }
+
+/* Toggle Hamburger */
+
+#toggle {
+  display: none;
+}
+
+/* Hamburger */
+
+@media (min-width: 600px) {
+	.hamburger {display: none; /* Hide on Mobile */
+	}
+	}
+
+.hamburger {
+  position: absolute;
+  top: 10vh;
+  right: 3vh;
+  margin-left: -2em;
+  margin-top: -45px;
+  width: 2em;
+  height: 45px;
+  z-index: 5;
+}
+
+.hamburger div {
+  position: relative;
+  width: 2em;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #000000;
+  margin-top: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Mobile Menu */
+
+.menu {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	top: 0; left: 0; right: 0; bottom: 0;
+	overflow: hidden;
+	transition: all 0s ease-in-out;
+	transform: scale(0);
+
+  }
+.menu-wrapper {
+	position: absolute;
+	overflow: hidden;
+	overflow-y: auto;
+	margin: auto;
+	height: 100%;
+	top: 50%; left: 0; right: 0; bottom: 0;
+
+  }
+.menu a {
+	position: relative;
+	text-decoration: none;
+	color: #000000;
+	font-size: 1em;
+	display: inline-block;
+	margin-bottom: 2em;
+	transition: color 0.2s ease-in-out;
+	letter-spacing: 1px;
+	font-weight: 600;
+  }
+.menu a:before {
+	content: '';
+	height: 0;
+	position: absolute;
+	width: 0.25em;
+	background-color: rgb(255, 255, 255);
+	left: -0.5em;
+	transition: all 0.2s ease-in-out;
+	}
+.menu a:hover {
+	color: rgb(0, 0, 0);
+  }
+.menu a:hover:before {
+	height: 100%;
+  }
+
+/* Animations Mobile Menu */
+#toggle:checked + .hamburger .top-bun {
+	transform: rotate(-45deg);
+	margin-top: 25px;
+  }
+  #toggle:checked + .hamburger .bottom-bun {
+	opacity: 0;
+	transform: rotate(45deg);
+  }
+  #toggle:checked + .hamburger .meat {
+	transform: rotate(45deg);
+	margin-top: -2px;
+  }
+  
+  #toggle:checked + .hamburger + .menu {
+	top: 0;
+	transform: scale(1);
+  }
+
+/* Body */
 
 body {
 	height: 100%;
@@ -58,6 +187,8 @@ img {
     margin-bottom: 0.5rem;
     display: block;
 }
+
+/* Paginas */
 
 .creaciones {
 	width: 95%; 
@@ -85,6 +216,7 @@ img {
 	text-align: left;
 	text-decoration: none;
 	font-weight: 600;
+	line-height: 1.7rem; 
 }
 
 .about-img img {
@@ -100,13 +232,14 @@ img {
 }
 
 .contact-text {
-	font-size: clamp( 1rem, 3vw, 1.5rem);
+	font-size: clamp( 1rem, 3vw, 1rem);
 	display: inline-block;
 	width: 100%;
-	text-align: left;
+	text-align: center;
 	text-decoration: none;
 	font-weight: 600;
 	padding-top: 5%;
+	line-height: 5vh;
 }
 
 a {
@@ -132,7 +265,7 @@ a {
 	width: 100%;
 	margin: 0 auto;
 	display: inline-block;
-	font-size: clamp( 1rem, 3vw, 1.5rem);
+	font-size: clamp( 1rem, 3vw, 1rem);
 	text-align: center;
 	text-decoration: none;
 	font-weight: 600;
@@ -157,7 +290,7 @@ a {
 	width: 100%;
 	margin: 0 auto;
 	display: inline-block;
-	font-size: clamp( 1rem, 3vw, 1.5rem);
+	font-size: clamp( 1rem, 3vw, 1rem);
 	text-align: center;
 	text-decoration: none;
 	font-weight: 600;
@@ -182,12 +315,14 @@ a {
 	width: 100%;
 	margin: 0 auto;
 	display: inline-block;
-	font-size: clamp( 1rem, 3vw, 1.5rem);
+	font-size: clamp( 1rem, 3vw, 1rem);
 	text-align: center;
 	text-decoration: none;
 	font-weight: 600;
 	/* padding-top: 5%;  */
 }
+
+/* Background */
 
 .background {
 	/* width: 100%; */
@@ -207,3 +342,4 @@ a {
 		margin: .25rem;
 		padding: .25rem;
 	}
+
