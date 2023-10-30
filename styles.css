@@ -326,7 +326,7 @@ a {
 .background {
 	/* width: 100%; */
 	height: 80vh;
-	background-position: 64%;
+	background-position: 50%;
 	background-image: url("images/background_2.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
