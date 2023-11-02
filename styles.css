@@ -298,7 +298,7 @@ h3 {
 .coleccion_test {
 	display: grid;
 	grid-gap: 10px;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	padding-left: 5%;
 	padding-right: 5%;
 }
