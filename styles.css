@@ -189,7 +189,7 @@ img {
 
 /* Paginas */
 
-.coleccion {
+/* .coleccion {
 	width: 95%; 
 	margin: 0 auto;
 	display: inline-block; 
@@ -198,9 +198,42 @@ img {
 .coleccion img {
 	width: 100%;
 	max-height: 50vh;
-	/* height: 1080px; */
 	object-fit: contain;
 	display: inline-block; 
+} */
+
+@media (min-width: 601px) {
+	.coleccion {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	}
+
+@media (max-width: 600px) {
+	.coleccion {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	}
+	  
+.coleccion img {
+	width: 100%;
+}
+	  
+	  
+.coleccion .item {
+	position: relative;
+	overflow: hidden;		
+}
+	  
+.coleccion .item img {
+	vertical-align: middle;	
 }
 
 .about {
@@ -293,36 +326,3 @@ h3 {
 }
 
 
-@media (min-width: 601px) {
-	.coleccion_test {
-		display: grid;
-		grid-gap: 10px;
-		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-		padding-left: 5%;
-		padding-right: 5%;
-	}
-	}
-
-@media (max-width: 600px) {
-	.coleccion_test {
-		display: grid;
-		grid-gap: 10px;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-		padding-left: 5%;
-		padding-right: 5%;
-	}
-	}
-	  
-.coleccion_test img {
-	width: 100%;
-}
-	  
-	  
-.coleccion_test .item {
-	position: relative;
-	overflow: hidden;		
-}
-	  
-.coleccion_test .item img {
-	vertical-align: middle;	
-}
