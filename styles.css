@@ -282,13 +282,37 @@ a {
 	background-repeat: no-repeat;
 	}
 
-	h5 {
-		margin: .25rem;
-		padding: .25rem;
-	}
+h5 {
+	margin: .25rem;
+	padding: .25rem;
+}
 
-	h3 {
-		margin: .25rem;
-		padding: .25rem;
-	}
+h3 {
+	margin: .25rem;
+	padding: .25rem;
+}
 
+
+
+
+.coleccion_test {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	padding-left: 5%;
+	padding-right: 5%;
+}
+	  
+.coleccion_test img {
+	width: 100%;
+}
+	  
+	  
+.coleccion_test .item {
+	position: relative;
+	overflow: hidden;		
+}
+	  
+.coleccion_test .item img {
+	vertical-align: middle;	
+}
