@@ -295,13 +295,25 @@ h3 {
 
 
 
-.coleccion_test {
-	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	padding-left: 5%;
-	padding-right: 5%;
-}
+@media (min-width: 600px) {
+	.coleccion_test {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	}
+
+@media (max-width: 600px) {
+	.coleccion_test {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	}
 	  
 .coleccion_test img {
 	width: 100%;
