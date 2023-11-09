@@ -183,58 +183,69 @@ body {
 
 img {
     max-width: 100%;
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
     display: block;
 }
 
 /* Paginas */
 
-/* .coleccion {
-	width: 95%; 
-	margin: 0 auto;
+.coleccion img {
+	width: 100%;
+	max-height: 40vh;
+	object-fit: cover;
 	display: inline-block; 
 }
 
-.coleccion img {
-	width: 100%;
-	max-height: 50vh;
-	object-fit: contain;
-	display: inline-block; 
+/* .de_la_luna img {
+	object-position: 0 0;
+}
+
+.ice_ice img {
+	object-position: 0 0;
+}
+
+.quarry img {
+	object-position: 0 0;
+}
+
+.magma img {
+	object-position: 0 0;
+}
+
+.candelabros img {
+	object-position: 0 0;
+}
+
+.posavasos img {
+	object-position: 0 0;
+}
+
+.nebula img {
+	object-position: 0 0;
 } */
+
 
 @media (min-width: 601px) {
 	.coleccion {
 		display: grid;
-		grid-gap: 10px;
+		grid-gap: 15px;
 		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 		padding-left: 5%;
 		padding-right: 5%;
+		padding-bottom: 5%;
 	}
 	}
 
 @media (max-width: 600px) {
 	.coleccion {
 		display: grid;
-		grid-gap: 10px;
+		grid-gap: 15px;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 		padding-left: 5%;
 		padding-right: 5%;
+		padding-bottom: 5%;
 	}
 	}
-	  
-.coleccion img {
-	width: 100%;
-}
-	  
-	  
-.coleccion .item {
-	position: relative;
-	overflow: hidden;		
-}
-	  
-.coleccion .item img {
-	vertical-align: middle;	
-}
 
 .about {
 	width: 80%;
