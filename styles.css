@@ -10,15 +10,31 @@ header {
 	padding-bottom: 5vh;
 }
 
-.logo {
-	font-size: clamp( 1.4rem, 3vw, 1.4rem);
-	display: inline-block;
-	width: 100%;
-	text-align: middle;
-	text-decoration: none;
-	font-weight: 1000;
-	letter-spacing: .3rem;
-}
+@media (min-width: 601px) {
+	.logo {
+		font-size: clamp( 1.8rem, 3vw, 1.4rem);
+		display: inline-block;
+		font-family: 'Roboto', sans-serif;
+		width: 100%;
+		text-align: middle;
+		text-decoration: none;
+		font-weight: 600;
+		letter-spacing: .3rem;
+	}
+	}
+
+@media (max-width: 600px) {
+	.logo {
+		font-size: clamp( 1.4rem, 3vw, 1.4rem);
+		display: inline-block;
+		font-family: 'Roboto', sans-serif;
+		width: 100%;
+		text-align: middle;
+		text-decoration: none;
+		font-weight: 1000;
+		letter-spacing: .3rem;
+	}
+	}
 
 /* .logo img {
 	height: clamp( 2.7rem, 5vw, 5rem);
