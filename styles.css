@@ -318,6 +318,7 @@ a {
 	/* height: 1080px; */
 	object-fit: contain;
 	display: inline-block; 
+	padding-bottom: 5vh;
 }
 
 .producto-text{ 
@@ -328,6 +329,8 @@ a {
 	text-align: center;
 	text-decoration: none;
 	font-weight: 600;
+	padding-bottom: 5vh;
+	padding-top: 5vh;
 }
 
 /* Background */
