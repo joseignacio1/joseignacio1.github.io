@@ -307,19 +307,33 @@ a {
 }
 
 .producto {
+	columns: 3 300px;
+	column-gap: 1em;
 	width: 70%; 
-	margin: 0 auto;
+	padding-bottom: 5vh;
 	display: inline-block; 
 }
 
 .producto img {
+	max-width: 100%;
+	margin-bottom: 1em;
+	/* padding-bottom: 1em; */
+}
+
+/* .producto {
+	width: 70%; 
+	margin: 0 auto;
+	display: inline-block; 
+} */
+
+/* .producto img {
 	width: 100%;
 	max-height: 800px;
-	/* height: 1080px; */
 	object-fit: contain;
 	display: inline-block; 
 	padding-bottom: 5vh;
-}
+} */
+
 
 .producto-text{ 
 	width: 100%;
