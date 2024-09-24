@@ -110,11 +110,11 @@ hr {
 
 .hamburger div {
   position: relative;
-  width: 2em;
-  height: 1px;
-  border-radius: 1px;
-  background-color: #000000;
-  margin-bottom: 8px;
+  width: 2.5em;
+  height: 3px;
+  border-radius: .5px;
+  background-color: #e7e7e7;
+  margin-bottom: 6px;
   transition: all 0.2s ease-in-out;
 }
 
